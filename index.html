@@ -129,7 +129,7 @@
                     /></a>
                   </div>
                   <div class="button-row">
-                    <button type="submit">Sign In</button>
+                    <button type="submit" id="signin-btn">Sign In</button>
                     <a href="" id="small-create">or, Create Account</a>
                   </div>
                 </form>
@@ -168,14 +168,21 @@
             />
           </form>
         </div>
-        <div class="create">
+        <div class="create" id="create">
           <span>Create account</span>
           <span
             ><a href="#form" class="free" id="createAccount"
               >It's free <img src="images/arrow-down.png" alt="" /></a
           ></span>
         </div>
+        <div class="logged-in" id="logged">
+          <img src="images/profile4.png" alt="" />
+          <p>Sidddharth Goyal</p>
+          <img src="images/arrow-down.png" alt="" />
+        </div>
       </div>
+
+      <!-- smallnav -->
       <div class="small-nav">
         <img src="images/small-nav-icons.png" alt="" />
       </div>
@@ -207,8 +214,8 @@
               <a href="" class="post-btn"
                 >Write a Post <img src="images/arrow-down.png" alt=""
               /></a>
-              <a href="" class="join-btn">
-                <img src="images/add.png" alt="" /> Join Group
+              <a href="" class="join-btn" id="join-btn">
+                <img src="images/add.png" id="join-btn-img" alt="" /> Join Group
               </a>
             </div>
           </div>
@@ -398,10 +405,10 @@
                 <div class="location">
                   <div class="loc-detail">
                     <img src="images/location.png" alt="" />
-                    <p>Noida, India</p>
+                    <p id="right-loc">Noida, India</p>
                   </div>
                   <a href="" class="edit">
-                    <img src="images/edit.png" alt="" />
+                    <img src="images/edit.png" id="edit-img" alt="" />
                   </a>
                 </div>
                 <hr />
@@ -411,6 +418,43 @@
                     Your location will help us serve better and extend a
                     personalised experience.
                   </p>
+                </div>
+                <div class="right-group" id="right-group">
+                  <div class="group-head">
+                    <img src="images/thumb.png" alt="" />
+                    <h3>RECOMMENDED GROPUS</h3>
+                  </div>
+                  <div class="group-items">
+                    <div class="gp-item">
+                      <div class="gp-profile">
+                        <img src="images/profile5.png" alt="" />
+                        <p>Leisure</p>
+                      </div>
+                      <a href="">Follow</a>
+                    </div>
+                    <div class="gp-item">
+                      <div class="gp-profile">
+                        <img src="images/profile6.png" alt="" />
+                        <p>Activism</p>
+                      </div>
+                      <a href="">Follow</a>
+                    </div>
+                    <div class="gp-item">
+                      <div class="gp-profile">
+                        <img src="images/profile7.png" alt="" />
+                        <p>MBA</p>
+                      </div>
+                      <a href="">Follow</a>
+                    </div>
+                    <div class="gp-item">
+                      <div class="gp-profile">
+                        <img src="images/profile8.png" alt="" />
+                        <p>Philosophy</p>
+                      </div>
+                      <a href="">Follow</a>
+                    </div>
+                  </div>
+                  <a href="" class="seemore">See More..</a>
                 </div>
               </div>
             </div>
