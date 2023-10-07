@@ -3,7 +3,28 @@ const accountPage = document.getElementById("account-page");
 const body = document.getElementById("body");
 openAccount.addEventListener("click", function () {
   accountPage.style.display = "flex";
-  // body.style.overflow = "hidden";
+});
+
+const create = document.getElementById("create");
+const signinBtn = document.getElementById("signin-btn");
+const logged = document.getElementById("logged");
+const joinBtn = document.getElementById("join-btn");
+const joinBtnImg = document.getElementById("join-btn-img");
+const rightLoc = document.getElementById("right-loc");
+const editImg = document.getElementById("edit-img");
+const rightGroup = document.getElementById("right-group");
+signinBtn.addEventListener("click", function (event) {
+  event.preventDefault();
+  logged.style.display = "flex";
+  create.style.display = "none";
+  joinBtn.style.backgroundColor = "#fff";
+  joinBtn.style.color = "#6a6a6b";
+  joinBtn.style.border = "0.8px solid #989899";
+  joinBtnImg.src = "images/exit.png";
+  rightLoc.innerHTML = "| Enter your location";
+  editImg.src = "images/mult.png";
+  rightGroup.style.display = "block";
+  accountPage.style.display = "none";
 });
 
 const cross1 = document.getElementById("cross");
